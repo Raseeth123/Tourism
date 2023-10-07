@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9f0abd257.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="css/parallax.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>Tour</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Croissant+One&family=Mooli&family=Pacifico&family=Poppins:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Croissant+One&family=Mooli&family=Pacifico&family=Poppins:ital@0;1&family=Roboto&display=swap');        
+        body{
+            background-color: white;
+        }
+        .purple{
+            background: url("https://cdn.pixabay.com/photo/2023/05/28/09/24/south-tyrol-8023224_1280.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            object-fit: contain;
+            height:800px;
+            border-bottom: 1px 2px solid black;
+        }
+
+        .blue{
+            height:1000px;
+        }
+
+        .ig{
+            width:80px;
+            height:80px;
+            border-radius: 100px;
+            padding:10px;
+        }
+
+        .navitext{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .navitext1{
+            font-style: italic;
+            color: black;
+            font-family: 'Croissant One', cursive;
+        }
+
+        .cot1{
+            margin-top: 50px;
+        }
+
+        .ft{
+            font-weight: bolder;
+            font-family: 'Courgette', cursive;
+            font-family: 'Croissant One', cursive;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .services{
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            width:250px;
+            height: 200px;
+            background-color: white;
+            margin: 7px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 15px;
+        }
+
+        .imgoo{
+            width: 100px;
+            height:100px;
+            text-align: center;
+            margin-left: 70px ;
+            margin-top: 20px;
+            
+        }
+
+        .fto{
+            margin-top: 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bolder;
+            font-family: 'Courgette', cursive;
+            font-family: 'Croissant One', cursive;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card:hover{
+            transform:scale(1.03);
+            transition:all 1.3s ease;
+        }
+
+        .align11{
+            margin-top: 90px;
+            padding: 5px;
+            text-align: center;
+            font-weight: bolder;
+            font-family: 'Courgette', cursive;
+            font-family: 'Croissant One', cursive;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .align12{
+            margin-top: 90px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card2{
+            width:300px;
+            height: 400px;
+            background-color: white;
+            margin: 7px;
+            border-radius: 15px;
+        }
+
+        .cardimg{
+            background: url("https://cdn.pixabay.com/photo/2021/08/04/14/16/tower-6521842_640.jpg");
+            background-size: cover;
+            height: 300px;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .card2:hover{
+            transform:scale(1.03);
+            transition:all 1.3s ease;
+        }
+
+        .cardimg1{
+            background: url(" https://cdn.pixabay.com/photo/2020/06/14/10/58/london-5297395_640.jpg");
+            background-size: cover;
+            height: 300px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 15px 15px 15px 15px;
+        }
+        .cardimg2{
+            background: url("  https://cdn.pixabay.com/photo/2019/03/09/13/45/dubai-4044183_640.jpg");
+            background-size: cover;
+            height: 300px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .cardtxt{
+            color: white;
+            padding: 3px;
+        }
+
+        .cardprice{
+            margin: 15px;
+        }
+
+
+        .card3{
+            width:300px;
+            height: 300px;
+            background-color: white;
+            margin: 12px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .card3:hover{
+            transform:scale(1.03);
+            transition:all 1.3s ease;
+        }
+
+        .cardoimg{
+            height:300px;
+            background: url("https://cdn.pixabay.com/photo/2023/08/30/13/13/el-chalten-8223303_640.jpg");
+            background-size: cover;
+        }
+
+        .cardimg01{
+            height:300px;
+            background: url("https://cdn.pixabay.com/photo/2021/10/19/11/55/city-6723388_640.jpg");
+            background-size: cover;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .cardimg02{
+            background: url("https://media.istockphoto.com/id/1246366598/photo/a-scenic-view-of-boats-under-a-blue-sky-in-backwaters-situated-in-allepey-town-located-in.webp?b=1&s=612x612&w=0&k=20&c=7fG7bFF3mOsYBE3q_27PrlSs62jwi2Uk4lyVKCkMO6E=");
+            height:300px;
+            background-size: cover;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .cardimg03{
+           
+            background: url("https://cdn.pixabay.com/photo/2017/04/26/10/30/melbourne-2262233_640.jpg");
+            height:300px;
+            background-size: cover;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .cardimg04{
+            background: url("https://cdn.pixabay.com/photo/2020/03/20/01/27/scotland-4949229_1280.jpg");
+            height:300px;
+            background-size: cover;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .cardimg05{
+            background: url("https://cdn.pixabay.com/photo/2017/12/16/16/37/great-wall-of-china-3022907_640.jpg");
+            height:300px;
+            background-size: cover;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .cardimg06{
+            background: url("https://media.istockphoto.com/id/1476624321/photo/venice-panorama-east-from-the-high-of-campanile-san-marco-tower-venice-italy.webp?b=1&s=612x612&w=0&k=20&c=89IZXQJBJcH8nFituCJfoUG1LjcKikmYSunoO5w7njY=");
+            height:300px;
+            background-size: cover;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .cardimg07{
+            background: url(" https://cdn.pixabay.com/photo/2018/05/09/01/00/greece-3384386_640.jpg");
+            height:300px;
+            background-size: cover;
+            border-radius: 15px 15px 15px 15px;
+        }
+       
+       .cardimg08{
+            background: url(" https://media.istockphoto.com/id/1410796651/photo/couple-dressed-in-ponchos-watching-the-ruins-of-machu-picchu-peru.webp?b=1&s=612x612&w=0&k=20&c=pQIb2DDYwvk3lL-nvoaDTcybr7sDafewJ4I1lWDEYNw=");
+            height:300px;
+            background-size: cover;
+            border-radius: 15px 15px 15px 15px;
+       }
+
+       .align22{
+            margin-top: 350px;
+            padding: 5px;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-left: 40%;
+            color: white;
+            font-family: 'Mooli', sans-serif;
+        }
+
+       .align23{
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-left: 42%;
+            color: white;
+            font-family: 'Mooli', sans-serif;
+        }
+
+       .butt{
+            padding:15px;
+           background-color: black;
+           color: white;
+            font-size: 20px;
+           font-weight: bolder;
+            margin-left: 47%;
+            color: white;
+            font-family: 'Mooli', sans-serif;
+            border-radius: 30px;
+        }
+
+        .butt:hover{
+            background-color: whitesmoke;
+            color: black;
+            transform:scale(1.01);
+            transition:all 1.3s ease;
+        }
+
+       .customrev{
+            text-align: center;
+            width:400px;
+            height:340px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+
+        .customrev:hover{
+           transform: scale(1.03);
+           transition: all 1.3s ease;
+         }
+
+        .fontoo{
+            margin-top: 5px;
+            font-family: 'Courgette', cursive;
+            font-family: 'Croissant One', cursive; 
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif; 
+            font-weight: bold;
+            color: black;
+        }
+
+        .card_image{
+            width:80px;
+            height: 80px;
+            border-radius: 100px;
+        }
+
+        .align121{
+            margin-top: 90px;
+            display: flex;
+            background-color: black;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+         }
+
+        .align1231{
+             font-size: 40px;
+            font-weight: bolder;
+            color: white;
+            font-family: 'Mooli', sans-serif;
+        }
+        .cott1{
+            margin:350px auto;
+            padding:15px;
+            font-size: 20px;
+            font-weight: bolder;
+            color: white;
+            font-family: 'Mooli', sans-serif;
+            text-align: center;
+        }
+
+        .imgrad{
+            width:100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+
+        .footer{
+            margin-top: 90px;
+            width:auto;
+            padding: 15px;
+            display: flex;
+            background-color: rgb(35, 28, 28);
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            color: white;
+        }
+
+        .decoo{
+            text-decoration: none;
+            color: white;
+        }
+
+        .alignooo1{
+            margin-right: 20px;
+        }
+
+        .yolo{
+            padding:7px;
+        }
+       
+       @media screen and (max-width:667px){
+         .align22{
+            text-align: center;
+         }
+         .align12{
+            margin-left:18px;
+         }
+         .align13{
+            margin-left:18px;
+         }
+         .blue{
+            width:95%;
+         }
+        
+        .services{
+            margin-left:19px;
+        }
+        .fontoo{
+            font-size: 14px;
+        }
+        .alignooo1{
+            marg
+        }
+
+       }
+
+       @media screen and (max-width:375px){
+         .align22{
+            text-align: center;
+         }
+         .blue{
+            width:95%;
+         }
+         
+        .align12{
+            margin-left:18px;
+         }
+         .align11{
+            margin-left:18px;
+         }
+         .services{
+            margin-left:19px;
+        }
+        .fontoo{
+            font-size: 14px;
+        }
+
+        
+       }
+
+       @media screen and (max-width:390px){
+        .align22{
+           text-align: center;
+         }
+         .blue{
+            width:95%;
+         }
+         .align12{
+            margin-left:18px;
+         }
+         .align11{
+            margin-left:18px;
+         }
+         .services{
+            margin-left:19px;
+        }
+        .fontoo{
+            font-size: 14px;
+        }
+
+       }
+
+       @media screen and (max-width:320px){
+        .align22{
+           text-align: center;
+         }
+         .blue{
+            width:95%;
+         }
+         .customrev{
+            height: 390px;
+         }
+         .align12{
+            margin-left:18px;
+         }
+         .align11{
+            margin-left:18px;
+         }
+         .services{
+            margin-left:19px;
+        }
+        .fontoo{
+            font-size: 14px;
+        }
+
+        
+       }
+
+       @media screen and (max-width:480px){
+        .align22{
+           text-align: center;
+         }
+         .blue{
+            width:95%;
+         }
+         .align12{
+            margin-left:18px;
+         }
+         .align11{
+            margin-left:18px;
+         }
+         .services{
+            margin-left:19px;
+        }
+        .fontoo{
+            font-size: 14px;
+        }
+
+       }
+
+       @media screen and (max-width:375px){
+        .align22{
+            text-align: center;
+         }
+         .blue{
+            width:95%;
+         } 
+         .align12{
+            margin-left:18px;
+         }
+         .align11{
+            margin-left:18px;
+         }
+        
+        .services{
+            margin-left:19px;
+        }
+        
+        .fontoo{
+            font-size: 14px;
+        }
+      } 
+
+        @media only screen and (max-width: 600px) {
+          
+             .alignooo1{
+                margin-right: 120px;
+             }
+        }
+       
+      
+       /*https://pixabay.com/photos/search/greece/
+       choose images from here..*/
+    </style>
+</head>
+<body>
+    <div class="purple">
+        <!--NAV_BAR STARTS HERE-->
+       <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand navitext1" href="#"><img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1695844470/texo6nkr8mk84nhxzk2d.avif" class="ig ">Paradaise</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active navtext navitext" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active navtext navitext" aria-current="page" href="#package">Package</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active navtext navitext" aria-current="page" href="#destination">Destination</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active navtext navitext" aria-current="page" href="#customer_review">Customer Review</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active navtext navitext" aria-current="page" href="#contact_us">Contact Us</a>
+                          </li>
+                        </ul>
+                  </div>
+                </nav>
+             </div>
+         </nav>
+         <!--NAV_BAR ENDS HERE-->
+            <div class="cott1">
+                <h3 class="align1231">Paradaise Tours</h3>
+                <p >Get Ready For An Adventure</p>
+            </div>
+    </div>
+    <div class="blue">
+     <div class="container">
+      <div class="cot1">
+        <!--SERVICE STARTS HERE-->
+        <h3 class="ft">Start Your Vacation <br>with Lots of Services! </h3>
+      </div>
+      <div class="services">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNxmNkZnfCl2hFlGal6hT7rx54CZYGtqkeJO3F7E&s" class="imgoo">
+            <h3 class="fto">Ship Cruises</h3>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShDFSkmyIwwc_isC0AGt2r_7r5vGRQ2y-4KD9BkXm8rqX24tbj1Xvtq9eDTZc3PtRN460&usqp=CAU" class="imgoo">
+            <h3 class="fto">Food Tours</h3>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVYGfqyFgQE_mVH5pyb13B3CmSU2jvZqwieiKJjl8&s" class="imgoo">
+            <h3 class="fto">Summer Rest</h3>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwlJxAsnC53eVCfzfVJb60rXYLryYE8DjFg&usqp=CAU" class="imgoo">
+            <h3 class="fto">Mountain Tours</h3>
+        </div>
+      </div>
+      <!--SERVICE ENDS HERE-->
+
+      <!--PACKAGE STARTS HERE-->
+     <h3 class="align11" id="package">Our Upcoming Tour Package</h3>
+     <div class="align12">
+            <div class="card2">
+                <div class="cardimg">
+                    <h3 class="cardtxt">Paris</h3>
+                </div>
+                <h4 class="cardprice">$499</h4>
+                <h5>⭐⭐⭐⭐⭐</h5>
+            </div>
+            <div class="card2">
+                <div class="cardimg1">
+                    <h3 class="cardtxt">London</h3>
+                </div>
+                <h4 class="cardprice">$499</h4>
+                <h5>⭐⭐⭐⭐</h5>
+            </div>
+            <div class="card2">
+                <div class="cardimg2">
+                    <h3 class="cardtxt">Dubai</h3>
+                </div>
+                <h4 class="cardprice">$499</h4>
+                <h5>⭐⭐⭐⭐⭐</h5>
+            </div>
+     </div>
+     <!--PACKAGE ENDS HERE-->
+
+     <!--DESTINATION STARTS HERE-->
+     <h3 class="align11" id="destination">Our Most Popular Destinations!</h3>
+     <div class="align12">
+        <div class="card3">
+            <div class="cardimg01">
+                <h3 class="cardtxt">New York</h3>
+            </div>
+           
+        </div>
+        <div class="card3">
+            <div class="cardimg02">
+                <h3 class="cardtxt">India</h3>
+            </div>
+            
+        </div>
+        <div class="card3">
+            <div class="cardimg03">
+                <h3 class="cardtxt">Melbourne</h3>
+            </div>
+            
+        </div>
+        <div class="card3">
+            <div class="cardimg04">
+                <h3 class="cardtxt">Scotland</h3>
+            </div>
+           
+        </div>
+        <div class="card3">
+            <div class="cardimg05">
+                <h3 class="cardtxt">China</h3>
+            </div>
+            
+        </div>
+        <div class="card3">
+            <div class="cardimg06">
+                <h3 class="cardtxt">Venice</h3>
+            </div>
+            
+        </div>
+        <div class="card3">
+            <div class="cardimg07">
+                <h3 class="cardtxt">Greece</h3>
+            </div>
+            
+        </div>
+        <div class="card3">
+            <div class="cardimg08">
+                <h3 class="cardtxt">Peru</h3>
+            </div>
+            
+        </div>
+     </div>
+     <!--DESTINATION ENDS HERE-->
+
+     <!--CUSTOMER REVIEW STARTS HERE-->
+     <h3 class="align11" id="customer_review">Our Customer Reviews</h3>
+     <div  class="align12">
+        <div class="customrev">
+            <h5>⭐⭐⭐⭐⭐</h5>
+            <br>
+            <p class="fontoo">"I recently traveled with Paradaise Tours and had an excellent experience. Their booking process was smooth, accommodations exceeded expectations, and the itinerary was well-planned. Knowledgeable guides made the trip memorable. Highly recommend!"</p>
+            <h5>JACK</h5>
+            <img src="data:image/jpeg;base64,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" class="card_image">
+        </div>
+        <div class="customrev">
+            <h5>⭐⭐⭐⭐⭐</h5><br>
+            <p class="fontoo">"I recently traveled with Paradaise Tours and had an excellent experience. Their booking process was smooth, accommodations exceeded expectations, and the itinerary was well-planned. Knowledgeable guides made the trip memorable. Highly recommend!"</p>
+            <h5>JERRY</h5>
+            <img src="data:image/jpeg;base64,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" class="card_image">
+        </div>
+        <div class="customrev">
+            <h5>⭐⭐⭐⭐⭐</h5><br>
+            <p class="fontoo">"I recently traveled with Paradaise Tours and had an excellent experience. Their booking process was smooth, accommodations exceeded expectations, and the itinerary was well-planned. Knowledgeable guides made the trip memorable. Highly recommend!"</p>
+            <h5>JOHN</h5>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8u_ayP-x7a7soze-Sef8UraDAM705lPqYmQ&usqp=CAU" class="card_image">
+        </div>
+     </div>
+    </div>
+    <!--CUSTOMER REVIEW ENDS HERE-->
+
+     <!--FOOTER STARTS HERE-->
+    <h3 class="align11" id="contact_us">Contact Us</h3>
+    <div class="footer">
+       <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1695844470/texo6nkr8mk84nhxzk2d.avif" class="imgrad">
+       <div>
+        <i class="fa-brands fa-linkedin fa-2x yolo"></i>
+        <i class="fa-brands fa-square-instagram  fa-2x yolo"></i>
+        <i class="fa-brands fa-facebook fa-2x yolo"></i>
+        <i class="fa-brands fa-whatsapp fa-2x yolo"></i>
+      </div>
+       <address class="alignoo">
+         <p>Paradaise Tours<br>No: 37, Tamil Nadu 600086<br>
+           Conran Smith Road Entrance Peters Road,<br>
+           Gopalapuram,Chennai,<br>
+           <br><br>
+           Phone: +91 9876543210<br>
+           Email: paradaisetours@gmail.com<br>
+           </p>
+       </address>
+       <div class="alignoo alignooo1">
+         <h5>Some Useful Links</h5>
+         <a href="#" class="decoo"><p>Home</p></a>
+         <a href="#package" class="decoo"><p>Package</p></a>
+         <a href="#destination" class="decoo"><p>Destination</p></a>
+         <a href="#customer_review" class="decoo"><p>Customer Review</p></a>
+         <a href="#contact_us" class="decoo"><p>Contact Us</p></a>
+         </div>
+   </div> 
+    <!--FOOTER ENDS HERE-->
+ </div>
+</body>
+</html>
